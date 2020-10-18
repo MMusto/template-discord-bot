@@ -1,0 +1,8 @@
+{
+"name": "template-bot",
+"version": "1.0.0",
+"description": "x's Fiverr bot",
+"main": "bot.py",
+"author": "Eden.exe",
+"dependencies": {}
+}
