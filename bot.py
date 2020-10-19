@@ -12,6 +12,9 @@ class Template(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
+        print(f'[!] {self.user.name} is ready!\n'
+              f'Owner: {self.app_info.owner}\n'
+              f'Discord.py version: {discord.__version__}\n')
         example_loop.start()
 
     @tasks.loop(minutes=1.0)
@@ -20,7 +23,7 @@ class Template(commands.Cog):
         self.loop += 1
 
     @commands.command(name="ping")
-    async def get_stats(self, ctx):
+    async def _test_cmd(self, ctx):
         await ctx.send("Pong!")
 
 # Run bot
