@@ -12,7 +12,7 @@ class Template(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print(f'[!] {self.user.name} is ready!\n'
+        print(f'[!] {self.bot.user.name} is ready!\n'
               f'Owner: {self.app_info.owner}\n'
               f'Discord.py version: {discord.__version__}\n')
         example_loop.start()
