@@ -13,7 +13,7 @@ class Template(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print(f'[!] {self.bot.user.name} is ready!\n'
-              f'Discord.py version: {discord.__version__}\n')
+              f'Discord.py version: {discord.__version__}')
         example_loop.start()
 
     @tasks.loop(minutes=1.0)
